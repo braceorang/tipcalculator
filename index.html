@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <div class="img-logo">
+    <img src="images/logo.svg">
+  </div>
+
+  <div class="contanier">
+    <div class="left">
+      <div class="content-left">
+        <h5>Bill</h5>
+        <form>
+          <input type="text" id="numberbill" placeholder="0" class="bill">
+          <img src="images/icon-dollar.svg" class="dollarSign">
+          <p  id="er" class="sucess">Cant be Zero</p>
+        </form>
+         
+
+        <h5>Select Tip %</h5>
+        <div class="flexBoxPercent">
+          <div class="percent">
+            <button type="button" class="percentContent " id="5per"  value="0.05">5%</button>
+          </div>
+          <div class="percent">
+            <button type="button" class="percentContent "  id="10per"  value="0.1">10%</button>
+          </div>
+          <div class="percent">
+            <button type="button" class="percentContent "  id="15per"   value="0.15">15%</button>
+          </div>
+          <div class="percent">
+            <button type="button" class="percentContent "  id="25per"    value="0.25">25%</button>
+          </div>
+          <div class="percent">
+            <button type="button" class="percentContent" id="50per" value="0.5">50%</button>
+          </div>
+          <div class="custom">
+            <form>
+              <input type="text"  id="numbercustom" placeholder="Custom" class="customContent">
+            </form>
+          </div>
+        </div>
+        <div class="formNumber">
+          <h5>Number of People</h5>
+          <form>
+            <input type="text" id="numberpeople"  placeholder="0"  class="error">
+            <img src="images/icon-person.svg" class="person">
+            <p id="er2" class="sucess">Cant be Zero</p>
+          </form>
+         
+        </div>
+
+
+      </div>
+    </div>
+    <div class="right">
+      <div class="content-right">
+        <div class="boxCal2">
+          <h4>Tip Amount</h4>
+          <p>/ person</p>
+        </div>
+        <div class="boxCal1">
+          <h1 id="tipAmout">$0.00</h1>
+        </div>
+        <div class="boxCal2">
+          <h4>Total </h4>
+          <p>/ person</p>
+        </div>
+        <div class="boxCal1">
+          <h1 id="total">$0.00</h1>
+        </div>
+        <button type="submit"  id="reset" class="reset">RESET</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
